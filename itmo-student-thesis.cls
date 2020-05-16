@@ -61,7 +61,8 @@
 
 %% Полуторный межстрочный интервал
 \RequirePackage{setspace}
-\onehalfspace
+\linespread{1.5}
+
 
 %% Абзацный отступ по ГОСТу - пять букв. Это примерно столько.
 
@@ -176,7 +177,7 @@
 \definecolor{darkgreen}{rgb}{0,0.5,0}
 
 \lstset{
-    language=Java,
+    language=python,
     extendedchars=\true,
     tabsize=4,
     keywordstyle=\color{darkblue},
@@ -731,7 +732,7 @@
     \addtolength{\voffset}{3mm}
     \addtolength{\headsep}{-3mm}
 
-    \setcounter{page}{4}
+    \setcounter{page}{5}
     % Выключаем переносы в оглавлении
     \pretocmd{\tableofcontents}{\begingroup\banhyphens}{}{}
     \apptocmd{\tableofcontents}{\endgroup}{}{}
